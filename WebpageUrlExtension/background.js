@@ -15,18 +15,23 @@ chrome.bookmarks.onCreated.addListener(function () {
 chrome.tabs.onActivated.addListener(tab => {
     console.log(tab);
     chrome.tabs.get(tab.tabId, current_tab_info => {
-        var querystring = decodeURIComponent(current_tab_info.url);     
+        var querystring = decodeURIComponent(current_tab_info.url);
         console.log(querystring);
+
+        fetch('http://127.0.0.1:5000/get').then(result => {
+            // Result now contains the response text, do what you want...
+            console.log(result.json())
+        })
     })
 
 });
 
 chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     var activeTab = tabs[0];
-    
+
     var activeTabId = activeTab.id; // or do whatever you need
     console.log(activeTabId);
-    
+
 
 });
 

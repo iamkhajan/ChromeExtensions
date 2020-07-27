@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request,jsonify
 import os
 
 app = Flask(__name__)
@@ -9,8 +9,8 @@ def home():
 
 @app.route("/get")
 def get_bot_response():
-    userText = request.args.get('msg')
-    return str(userText)
+    print(jsonify({"userText":"Khajan"}))
+    return jsonify({"userText":"Khajan"})
 
 
 if __name__ == "__main__":
