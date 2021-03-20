@@ -23,7 +23,7 @@ ipython @ file:///Users/runner/miniforge3/conda-bld/ipython_1593235463433/work
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi @ file:///Users/runner/miniforge3/conda-bld/jedi_1592619352011/work
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib==0.16.0
 json5 @ file:///home/conda/feedstock_root/build_artifacts/json5_1591810480056/work
 jsonschema==3.2.0
