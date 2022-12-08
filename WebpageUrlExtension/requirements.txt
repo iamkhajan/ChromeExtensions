@@ -4,7 +4,7 @@ backcall @ file:///home/conda/feedstock_root/build_artifacts/backcall_1592338393
 bleach @ file:///home/conda/feedstock_root/build_artifacts/bleach_1588608214987/work
 blis==0.2.4
 brotlipy==0.7.0
-certifi==2020.6.20
+certifi==2022.12.7
 cffi==1.14.0
 chardet==3.0.4
 ChatterBot==1.0.5
